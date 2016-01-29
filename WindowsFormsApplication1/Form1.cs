@@ -16,5 +16,25 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(this.textBox1.Text == "")
+            {
+                Console.Out.WriteLine("no name provided");
+            }
+            else
+            {
+                Console.Out.WriteLine(this.textBox1.Text + " has signed in");
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dispose();
+            Application.Exit();
+        }
     }
 }
