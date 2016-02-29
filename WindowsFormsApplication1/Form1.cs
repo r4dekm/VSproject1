@@ -36,5 +36,10 @@ namespace WindowsFormsApplication1
             Dispose();
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button2_Click(sender, e);
+        }
     }
 }
